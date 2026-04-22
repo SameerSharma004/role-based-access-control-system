@@ -1,0 +1,49 @@
+.form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+.member-form {
+  width: 300px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-form h2 {
+  text-align: center;
+}
+
+.input,
+.select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.button1 {
+  padding: 10px;
+  border: none;
+  background: #8a2be2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background: #6a1bbd;
+}
+.button2{
+  cursor: pointer;
+}

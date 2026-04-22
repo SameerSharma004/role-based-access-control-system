@@ -1,0 +1,20 @@
+import express from "express";
+import cors from "cors";
+import authRoutes from "./routes/auth.route.js";
+import todoRoutes from "./routes/todo.route.js";
+import adminRoute from "./routes/admin.route.js";
+import managerRoute from "./routes/manager.route.js";
+import verifyToken from "./middleware/verifyToken.middleware.js";
+import authorizeRoles from "./middleware/role.middleware.js";
+const app = express();
+const port = 3000;
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use("/api/todos",verifyToken, todoRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/admin",verifyToken,authorizeRoles("admin"), adminRoute);
+app.use("/api/manager", verifyToken, authorizeRoles("manager"), managerRoute);
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});

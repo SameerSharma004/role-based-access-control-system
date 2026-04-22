@@ -1,0 +1,159 @@
+.manager-home {
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  height: 100vh;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.task-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.task-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.task-input:focus {
+  border-color: #4a90e2;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn_delete {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  background: #f44336;
+  color: white;
+}
+.btn_update{
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  background: #2196f3;
+  color: white;
+}
+.btn_create{
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  background: #4caf50;
+  color: white;
+}
+
+.create:hover {
+  background: #43a047;
+}
+
+.btn_update:hover {
+  background: #1e88e5;
+}
+
+.delete-box {
+  margin-top: 20px;
+}
+
+.btn_delete:hover {
+  background: #e53935;
+}
+.task-list {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.task-list h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.task-list p {
+  color: #777;
+  font-size: 14px;
+}
+
+.task-card {
+  background: #ffffff;
+  padding: 15px 18px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.task-card p {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn.delete {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn.delete:hover {
+  background: #e63946;
+}
+
+.task-card {
+  animation: fadeIn 0.3s ease-in-out;
+}
+.btn_container {
+  display: flex;
+  gap: 10px;
+}
+.task-card-container{
+
+}

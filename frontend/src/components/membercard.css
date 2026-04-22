@@ -1,0 +1,60 @@
+.member-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 18px;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.member-card:hover {
+  background-color: rgb(233, 233, 233);
+  color: black;
+}
+
+.member-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.member-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.member-name {
+  margin: 0;
+  font-size: 16px;
+}
+
+.member-email {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.member-role {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.member-role span {
+  font-weight: bold;
+}
+
+.member-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.member-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.member-actions button:hover {
+  transform: scale(1.1);
+}
